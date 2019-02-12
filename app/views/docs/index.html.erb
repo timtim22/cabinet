@@ -3,3 +3,5 @@
         <%= time_ago_in_words(doc.created_at) %>
         <%= truncate(doc.content, length:50) %>
 <% end %>
+<p>
+<%= link_to  "Create Dcc", new_doc_path %>
