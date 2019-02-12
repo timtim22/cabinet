@@ -1,7 +1,7 @@
 <%= @docs.each do |doc| %>
     <h2> <%= link_to  doc.title, doc %> </h2>
-        <%= time_ago_in_words(doc.created_at) %>
+        <%= time_ago_in_words(doc.created_at) %><p>
         <%= truncate(doc.content, length:50) %>
 <% end %>
 <p>
-<%= link_to  "Create Dcc", new_doc_path %>
+<%= link_to  "Create Doc", new_doc_path %>
